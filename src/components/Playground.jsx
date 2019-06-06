@@ -21,6 +21,8 @@ export default function Playground({ }) {
       <Div bold={shouldBeBold}>hello world!!!!!!</Div>
 
       <button onClick={() => setShouldBeBold(!shouldBeBold)}>toogle bold for my Divs</button>
+
+      <input type="text" />
     </Div>
   );
 }
