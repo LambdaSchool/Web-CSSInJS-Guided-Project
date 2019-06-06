@@ -1,10 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 
-// const style = getStyle('pink', 'blue');
+const Div = styled.div`
+
+`;
 
 export default function Playground({ primaryColor, secondaryColor }) {
   return (
-    <div
+    <Div
       className='alert'
     >
       <h3>
@@ -12,6 +15,6 @@ export default function Playground({ primaryColor, secondaryColor }) {
       </h3>
 
       more playground stuff
-    </div>
+    </Div>
   );
 }
