@@ -1,5 +1,6 @@
 import React from 'react';
 
+// the React Native way (function or object and inline styles)
 const getStyle = (primaryColor, secondaryColor) => ({
   container: {
     color: primaryColor,
