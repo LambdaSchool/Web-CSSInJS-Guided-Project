@@ -9,8 +9,6 @@ export default class Container extends React.Component {
         <Playground primaryColor="green" secondaryColor="black" />
         <Playground primaryColor="pink" secondaryColor="black" />
         <Playground primaryColor="blue" secondaryColor="black" />
-        <Playground primaryColor="grey" secondaryColor="black" />
-        <Playground primaryColor="yellow" secondaryColor="black" />
       </div>
     );
   }
