@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 
@@ -8,6 +8,8 @@ const Div = styled.div`
 `;
 
 export default function Playground({ }) {
+  const [shouldBeBold, setShouldBeBold] = useState(false);
+
   return (
     <Div
       className='alert'
@@ -16,9 +18,9 @@ export default function Playground({ }) {
         This is the playground component
       </h3>
 
-      <Div>hello world!!!!!!</Div>
+      <Div bold={shouldBeBold}>hello world!!!!!!</Div>
 
-      <button>toogle bold for my Divs</button>
+      <button onClick={() => setShouldBeBold(!shouldBeBold)}>toogle bold for my Divs</button>
     </Div>
   );
 }
