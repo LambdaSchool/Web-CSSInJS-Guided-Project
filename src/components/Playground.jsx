@@ -1,10 +1,28 @@
 import React from 'react';
 
+const getStyle = (primaryColor, secondaryColor) => ({
+  container: {
+    color: primaryColor,
+  },
+  h3: {
+    color: secondaryColor,
+  },
+});
 
-export default function Playground() {
+export default function Playground({ primaryColor, secondaryColor }) {
+  const style = getStyle(primaryColor, secondaryColor);
+
   return (
-    <div id="playgroundComponent" className='alert'>
-      This is the playground component
+    <div
+      style={style.container}
+      id="playgroundComponent"
+      className='alert'
+    >
+      <h3 style={style.h3}>
+        This is the playground component
+      </h3>
+
+      more playground stuff
     </div>
   );
 }
