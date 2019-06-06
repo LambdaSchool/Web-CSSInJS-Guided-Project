@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 const Div = styled.div`
   font-weight: bold;
+`;
 
-  h3.pinky {
-    color: pink;
-  }
+const H3 = styled.h3`
+  color: pink;
 `;
 
 export default function Playground({ }) {
@@ -15,9 +15,9 @@ export default function Playground({ }) {
     <Div
       className='alert'
     >
-      <h3 className='pinky'>
+      <H3>
         This is the playground component
-      </h3>
+      </H3>
 
       more playground stuff
     </Div>
