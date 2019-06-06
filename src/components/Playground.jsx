@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Div = styled.div`
-
+  font-weight: bold;
 `;
 
 export default function Playground({ primaryColor, secondaryColor }) {
