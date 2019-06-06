@@ -7,18 +7,29 @@ const Div = styled.div`
   font-family: 'Times New Roman', Times, serif;
 `;
 
-export default function Playground({}) {
-  return (
-    <Div
-      className='alert'
-    >
-      <h3>
-        This is the playground component
-      </h3>
+export default class Playground extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      bold: false,
+    };
+  }
 
-      <Div>hello world!!!!!!</Div>
+  toggleBold = () => this.setState(st => ({ bold: !st.bold }))
 
-      more playground stuff
-    </Div>
-  );
+  render() {
+    return (
+      <Div
+        className='alert'
+      >
+        <h3>
+          This is the playground component
+        </h3>
+
+        <Div>hello world!!!!!!</Div>
+
+        <button onClick={this.toggleBold}>toogle bold for my Divs</button>
+      </Div>
+    );
+  }
 }
