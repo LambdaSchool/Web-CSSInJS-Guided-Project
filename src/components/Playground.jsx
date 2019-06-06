@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const Div = styled.div`
+const StyledPlayground = styled.div`
   font-weight: bold;
 `;
 
@@ -12,7 +12,7 @@ const H3 = styled.h3`
 
 export default function Playground({ }) {
   return (
-    <Div
+    <StyledPlayground
       className='alert'
     >
       <H3>
@@ -20,6 +20,6 @@ export default function Playground({ }) {
       </H3>
 
       more playground stuff
-    </Div>
+    </StyledPlayground>
   );
 }
