@@ -3,19 +3,11 @@ import styled from 'styled-components';
 
 
 const Div = styled.div`
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-
-    &:hover {
-      background: green;
-    }
-
-    @media (max-width: 500px) {
-      background: red;
-    }
+  font-weight: ${props => (props.bold ? 'bold' : 'inherit')};
+  font-family: 'Times New Roman', Times, serif;
 `;
 
-export default function Playground({ }) {
+export default function Playground({}) {
   return (
     <Div
       className='alert'
@@ -23,6 +15,8 @@ export default function Playground({ }) {
       <h3>
         This is the playground component
       </h3>
+
+      <Div>hello world!!!!!!</Div>
 
       more playground stuff
     </Div>

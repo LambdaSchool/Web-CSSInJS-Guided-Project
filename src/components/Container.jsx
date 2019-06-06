@@ -12,8 +12,6 @@ export default class Container extends React.Component {
     return (
       <StyledContainer id="containerComponent" className='container'>
         <Playground primaryColor="green" secondaryColor="black" />
-        <Playground primaryColor="pink" secondaryColor="black" />
-        <Playground primaryColor="blue" secondaryColor="black" />
       </StyledContainer>
     );
   }
