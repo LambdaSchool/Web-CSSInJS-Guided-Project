@@ -7,7 +7,7 @@ const Div = styled.div`
 `;
 
 const H3 = styled.h3`
-  color: pink;
+  color: green;
 `;
 
 export default function Playground({ }) {
