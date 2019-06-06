@@ -2,24 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const StyledPlayground = styled.div`
-  font-weight: bold;
-`;
+const Div = styled.div`
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 
-const H3 = styled.h3`
-  color: green;
+    &:hover {
+      background: green;
+    }
+
+    @media (max-width: 500px) {
+      background: red;
+    }
 `;
 
 export default function Playground({ }) {
   return (
-    <StyledPlayground
+    <Div
       className='alert'
     >
-      <H3>
+      <h3>
         This is the playground component
-      </H3>
+      </h3>
 
       more playground stuff
-    </StyledPlayground>
+    </Div>
   );
 }
